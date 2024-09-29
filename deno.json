@@ -1,5 +1,4 @@
 {
-  "importMap": "import_map.json",
   "compilerOptions": {
     "lib": [
       "dom",
@@ -8,7 +7,7 @@
     ]
   },
   "tasks": {
-    "start": "deno run --allow-all ./main.ts",
-    "build": "deno compile --allow-all --unstable ./main.ts"
+    "start": "deno run --allow-all ./src/App.ts",
+    "build": "deno compile --allow-all --unstable ./src/App.ts"
   }
 }

@@ -3,6 +3,20 @@
 <script src="./renderer.js"></script>
 <div class="contents">
     <div id="nav">
-        <script type="module" src="./components/_nav.jsx"></script>
+        <div class="nav-buttons">
+            <button id="back-button">Back</button>
+            <button id="forward-button">Forward</button>
+            <button id="refresh-button">Refresh</button>
+            <button id="settings-button">Settings</button>
+        </div>
+        <input type="text" id="url-bar">
+        <iframe src="" frameborder="0" id="main-iframe"></iframe>
     </div>
-</div> 
+</div>
+<!--Hiddens divs-->
+<div id="modal-search-bar" class="modal-search-bar">
+  
+</div>
+<div id="modal-settings" class="modal-settings">
+    <h1 class="titles">Settings</h1>
+</div>
