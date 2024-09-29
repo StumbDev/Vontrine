@@ -1,55 +1,70 @@
 {
-    "name": "vontrine",
-    "version": "0.0.1",
-    "description": "The fast, secure, chroium based web browser 🖥",
-    "main": "./App.js",
-    "dependencies": {
-        "react": "^18.3.1",
-        "sass": "^3.0.0",
-        "typescript": "^5.6.2"
-    },
-    "devDependencies": {
-        "electron": "^32.1.2",
-        "electron-builder": "^25.0.5"
-    },
-    "build": {
-        "appId": "dev.github.stumbdev.vontrine",
-        "win": {
-         "target": [
-          {
-           "target": "msi",
-           "arch": [
-             "x64",
-             "ia32"
+  "name": "vontrine",
+  "version": "0.0.1",
+  "description": "The fast, secure, chroium based web browser 🖥",
+  "main": "./App.js",
+  "scripts": {
+    "dev": "server.js"
+  },
+  "dependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/node": "^22.7.4",
+    "@types/react": "^18.3.10",
+    "browserify": "^17.0.0",
+    "express": "^4.21.0",
+    "gulp": "^5.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^3.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.79.4",
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "electron": "^32.1.2",
+    "electron-builder": "^25.0.5"
+  },
+  "build": {
+    "appId": "dev.github.stumbdev.vontrine",
+    "win": {
+      "target": [
+        {
+          "target": "msi",
+          "arch": [
+            "x64",
+            "ia32"
           ]
         }
-       ]
-     },
+      ]
+    },
     "mac": {
-       "target": [
-         {
-            "target": "pkg",
-            "arch": [
+      "target": [
+        {
+          "target": "pkg",
+          "arch": [
             "universal"
           ]
         }
-       ]
-      },
-      "linux": {
-        "target": [
-            {
-                "target": "flatpak",
-                "arch": "x64"
-            },
-            {
-                "target": "deb",
-                "arch": "x64"
-            },
-            {
-                "target": "snap",
-                "arch": "x64"
-            }
-        ]
-      }
+      ]
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "flatpak",
+          "arch": "x64"
+        },
+        {
+          "target": "deb",
+          "arch": "x64"
+        },
+        {
+          "target": "snap",
+          "arch": "x64"
+        }
+      ]
     }
+  }
 }

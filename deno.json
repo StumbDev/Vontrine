@@ -1,0 +1,14 @@
+{
+  "importMap": "import_map.json",
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ]
+  },
+  "tasks": {
+    "start": "deno run --allow-all ./main.ts",
+    "build": "deno compile --allow-all --unstable ./main.ts"
+  }
+}

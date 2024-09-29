@@ -1,5 +1,9 @@
-const { app, BrowserWindow } = require('electron/main')
-const path = require('node:path')
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:636490218.
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:2688556212.
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:723435869.
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:2279329305.
+import { app, BrowserWindow } from 'electron';
+import path from 'node:path';
 
 function createWindow () {
   const win = new BrowserWindow({
