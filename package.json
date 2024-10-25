@@ -1,0 +1,29 @@
+{
+  "name": "Vontrine",
+  "version": "0.0.2",
+  "description": "The new way to the web",
+  "main": "App.js",
+  "scripts": {
+    "start": "electron .",
+    "build:dist": "sass ./src/styles/__global.scss ./src/styles/css/main.css && tsc ./src/types/*.ts",
+    "build:bin": "electron-builder -wml"
+  },
+  "author": "Miguel V. Mesquita",
+  "devDependencies": {
+    "electron": "^33.0.2",
+    "electron-builder": "^25.1.8"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@electron/remote": "^2.1.2",
+    "@types/electron": "^1.6.12",
+    "@types/node": "^22.8.0",
+    "sass": "^1.80.4",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3"
+  },
+  "build": {
+    "appId": "dev.github.stumbdev.vontrine.Vontrine"
+  }
+}

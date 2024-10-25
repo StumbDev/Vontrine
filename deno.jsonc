@@ -1,0 +1,8 @@
+{
+    "lib": ["dom"],
+    "nodeModulesDir": "auto",
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": false
+    }
+}

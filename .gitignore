@@ -1,0 +1,6 @@
+/node_modules
+deno.lock
+/src/styles/css
+/src/types/dist
+/src/styles/dist
+/dist

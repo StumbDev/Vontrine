@@ -1,0 +1,147 @@
+// __global.scss
+
+// Dark Color Variables
+$primary-color: #121212;
+$secondary-color: #1e1e1e;
+$accent-color: #6a5acd; // Purple tone
+$text-color: #e0e0e0;
+$link-color: $accent-color;
+
+// Font Variables
+$font-family: 'Helvetica Neue', Arial, sans-serif;
+
+// Base Styles
+body {
+  background-color: $primary-color;
+  color: $text-color;
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Header Styles
+.header {
+  background-color: $secondary-color;
+  color: $text-color;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+// Navigation Styles
+.nav {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.nav-item {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+// Content Styles
+.content {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+// Button Styles
+.button {
+  background-color: $accent-color;
+  color: $primary-color;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: lighten($accent-color, 10%);
+  }
+}
+
+// Footer Styles
+.footer {
+  background-color: $secondary-color;
+  color: $text-color;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.url-bar {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e; // Dark background for the URL bar
+  border: 1px solid #6a5acd; // Accent border color
+  border-radius: 5px; // Rounded corners
+  padding: 8px 12px; // Padding for spacing
+  margin: 20px auto; // Center the URL bar
+  max-width: 600px; // Maximum width for the URL bar
+  transition: border-color 0.3s; // Smooth transition for border color
+
+  &:focus-within {
+    border-color: lighten(#6a5acd, 10%); // Lighter border on focus
+  }
+}
+
+.url-input {
+  flex: 1; // Allow input to take available space
+  background-color: transparent; // Transparent background
+  color: #e0e0e0; // Light text color
+  border: none; // No border for the input
+  outline: none; // Remove outline on focus
+  font-size: 16px; // Font size for readability
+  padding: 0; // Remove default padding
+}
+
+.url-button {
+  background-color: #6a5acd; // Button background color
+  color: #ffffff; // Button text color
+  border: none; // No border
+  border-radius: 5px; // Rounded corners
+  padding: 8px 12px; // Padding for button
+  cursor: pointer; // Pointer cursor on hover
+  transition: background-color 0.3s; // Smooth transition for background
+
+  &:hover {
+    background-color: lighten(#6a5acd, 10%); // Lighter on hover
+  }
+
+  &:focus {
+    outline: none; // Remove outline on focus
+  }
+}
+
+.settings {
+  text-align: center;
+}
+
+.web-frame {
+  width: 100%;               // Full width of the container
+  height: calc(100vh - 200px); // Height adjustment based on header and footer
+  border: none;             // No border for the iframe
+  margin-top: 20px;         // Space above the iframe
+  border-radius: 5px;      // Rounded corners for aesthetics
+  background-color: #121212; // Background color for dark mode
+}
